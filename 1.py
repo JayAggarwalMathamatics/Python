@@ -8,7 +8,7 @@ while True:
     options = input("Choose an option! =>")
 
     # ISBN
-    elif options == "1":
+    if options == "1":
         ISBN = input("Enter ISBN =>")
         a=(int(ISBN[0])*1) + (int(ISBN[1])*2) + (int(ISBN[2])*3) + (int(ISBN[3])*4)
         b=(int(ISBN[4])*5) + (int(ISBN[5])*6) + (int(ISBN[6])*7) + (int(ISBN[7])*8)
@@ -21,7 +21,7 @@ while True:
             print("Get out of here you failure and scammer!")
 
         # UPC
-    if options == "2":
+    elif options == "2":
         UPC = input("Enter UPC =>")
         a = int(UPC[0])+int(UPC[2])+int(UPC[4])+int(UPC[6])+int(UPC[8])+int(UPC[10])
         b = int(a*3)
